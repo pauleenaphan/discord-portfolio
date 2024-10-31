@@ -1,0 +1,142 @@
+.outerBack{
+    border-left: 30px solid #202225;
+    border-right: 30px solid #202225;
+    border-bottom: 30px solid #202225;
+    margin: 0 auto;
+    margin-bottom: 5%;
+    width: 40%;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    
+}
+
+.aboutPage{
+    margin: 0 auto;
+    /* fix this later */
+    /* border-radius: 5px; */
+    background-color: #2f3136 !important;
+}
+
+Nav{
+    padding: 20px;
+    display: flex;
+    gap: 50px;
+}
+
+.divider{
+    width: 95%;
+    border: rgb(117, 117, 117) solid 1px;
+    margin: 0px auto;
+}
+
+/* ! About me section */
+.aboutMeDesc{
+    padding: 20px;
+}
+
+.profileSubTitle{
+    font-size: 15px;
+    /* font-weight: bold; */
+    color: darkgray;
+    padding: 10px 20px;
+}
+
+/* ! Role tags  */
+.skills{
+    padding: 0px 20px 20px 20px;
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+
+.roleSkillTag{
+    background-color: #40444b;
+    width: fit-content;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 15px;
+    display: flex;
+    gap: 5px;
+    align-items: center; 
+    justify-content: center;
+}
+
+/* matches any class that starts with circle */
+[class^="circle"] {
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.circle0{
+    border: solid orange 7px; 
+}
+
+.circle1{
+    border: solid rgb(70, 167, 212) 7px; 
+}
+
+.circle2{
+    border: solid rgb(238, 255, 0) 7px; 
+}
+
+.circle3{
+    border: solid rgb(35, 114, 204) 7px; 
+}
+
+.circle4{
+    border: solid rgb(20, 116, 20) 7px; 
+}
+
+.circle5{
+    border: solid rgb(88, 197, 61) 7px; 
+}
+
+.circle6{
+    border: solid rgb(63, 152, 235) 7px; 
+}
+
+.circle7{
+    border: solid rgb(18, 156, 41) 7px; 
+}
+
+.circle8{
+    border: solid rgb(214, 150, 30) 7px; 
+}
+
+.circle9{
+    border: solid rgb(204, 35, 35) 7px; 
+}
+
+.circle10{
+    border: solid rgb(228, 116, 25) 7px; 
+}
+
+.circle11{
+    border: solid rgb(25, 99, 184) 7px; 
+}
+
+/* ! Education */
+.educationDate{
+    padding: 0px 20px;
+}
+
+.educationInfo{
+    padding: 0px 20px 20px 20px;
+}
+
+/* ! Connections */
+.contact{
+    display: flex;
+    padding: 0px 20px 20px 20px;
+    gap: 10px;
+}
+
+.contactBtn{
+    border: 1px solid rgb(128, 128, 128);
+    padding: 15px 20px;
+    border-radius: 5px;
+    font-size: 20px;
+    width: 50%;
+    font-weight: bold;
+    cursor: pointer;
+}
