@@ -1,0 +1,29 @@
+.projectContainer img{
+    width: 100%;
+}
+
+.projectPage{
+    margin: 0 auto;
+    /* fix this later */
+    /* border-radius: 5px; */
+    background-color: #2f3136 !important;
+    height: 60vh;
+    overflow-y: scroll;
+}
+
+.projects{
+    padding: 20px;
+}
+
+.projectName{
+    padding: 10px 0px 5px;
+}
+
+.projectTools{
+    padding: 10px 0px 30px;
+}
+
+.projectTools ul{
+    display: flex;
+    gap: 5px;
+}

@@ -1,0 +1,64 @@
+.contactPage{
+    margin: 0 auto;
+    /* fix this later */
+    /* border-radius: 10px; */
+    background-color: #2f3136 !important;
+    height: 60vh;
+}
+
+.contactForm{
+    padding: 20px;
+}
+
+.emailFormHead{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    gap: 10px;
+}
+
+.labelInput{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+
+input[type=text], textarea{
+    /* width: 100%; */
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 15px;
+    background-color: #40444b;
+    border: 2px solid rgb(99, 99, 99);
+    outline: none;
+    color: white;
+}
+
+textarea{
+    height: 200px;
+    resize: none;
+}
+
+.contactStatus{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.subbtn{
+    padding: 10px 20px;
+    background-color: #40444b;
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+    margin: 20px 0px;
+}
+
+.subbtn:hover{
+    opacity: 0.8;
+}

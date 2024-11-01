@@ -1,4 +1,15 @@
+Nav{
+    background-color: #2f3136;
+    display: flex;
+    justify-content: space-around;
+}
+
 nav button{
     background-color: #2f3136;
+    font-size: 15px;
     border: none;
+}
+
+nav button:hover{
+    cursor: pointer;
 }

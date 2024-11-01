@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-route
 import { About } from './pages/About';
 import { Header } from './component/Header';
 import { Projects } from './pages/Projects';
+import { Contact } from './pages/Contact';
 
 function App() {
   const location = useLocation();
@@ -15,6 +16,7 @@ function App() {
         <Routes>
           <Route path="/" element={<About />} />
           <Route path="/Projects" element={<Projects />}/>
+          <Route path="/Contact" element={<Contact/>}/>
         </Routes>
     </>
   )

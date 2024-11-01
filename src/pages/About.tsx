@@ -2,20 +2,22 @@ import { Nav } from "../component/Nav";
 import "../style/About.css";
 
 import { FaLinkedin, FaGithub } from "react-icons/fa";
+import { IoMdMail } from "react-icons/io";
 import { RxArrowTopRight } from "react-icons/rx";
 import { MdVerified } from "react-icons/md";
 
 export const About = () =>{
     return(
         <div className="outerBack">
+            <Nav></Nav>
             <div className="aboutPage">
-                <Nav></Nav>
                 <div className="divider"></div>
                 <p className="aboutMeDesc"> 
-                    Recent college gradute from CSUF looking for opportunities in fullstack and web development.
-                    Loves orange cats and creating cool websites.
+                    Recent college graduate from CSUF seeking opportunities in full-stack and web development. 
+                    I’m excited to learn and grow my skills in web development, open to exploring new technologies and 
+                    opportunities. Passionate about creating engaging websites and, of course, orange cats.
                 </p>
-                <p className="profileSubTitle"> Roles </p>
+                <p className="profileSubTitle"> Skills </p>
                 <section className="skills"> 
                     {/* <p className="profileSubTitle"> Roles </p> */}
                     <div className="roleSkillTag">
@@ -70,7 +72,7 @@ export const About = () =>{
                 <section className="education">
                     <p className="profileSubTitle"> Education </p>
                     <p className="educationDate"> September 2020 - May 2024 </p>
-                    <p className="educationInfo"> Bachelors in Computer Science </p>
+                    <p className="educationInfo"> Computer Science @ California State University of Fullerton </p>
                     <p className="profileSubTitle"> Connections </p>
                 </section>
                 <section className="contact">
@@ -86,6 +88,14 @@ export const About = () =>{
                         <div className="contactBtnContainer">
                             <FaGithub className="contactIcons"/>
                             <p> pauleenaphan </p>
+                            <MdVerified className="verifiedIcon"/>
+                        </div>
+                        <RxArrowTopRight className="arrowBtn"/>
+                    </a>
+                    <a className="contactBtn" href="https://github.com/pauleenaphan">
+                        <div className="contactBtnContainer">
+                            <IoMdMail className="contactIcons"/>
+                            <p> Pauleena2002@gmail.com </p>
                             <MdVerified className="verifiedIcon"/>
                         </div>
                         <RxArrowTopRight className="arrowBtn"/>

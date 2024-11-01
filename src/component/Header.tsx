@@ -1,10 +1,13 @@
 import profilepic from "../assets/profilepic.jpg";
 import "../style/Header.css";
 
+import { useNavigate } from "react-router-dom";
 import { IoChatbubbleSharp } from "react-icons/io5";
 import { FaComputer, FaCat } from "react-icons/fa6";
 
 export const Header = () =>{
+    const navigate = useNavigate();
+
     return(
         <div className="outerBack2">
             <div className="headerPage">
@@ -12,7 +15,7 @@ export const Header = () =>{
                     <img className="profilePic" src={profilepic} alt="pauleena phan"/>
                     <div className="contactContainer">
                         <IoChatbubbleSharp/>
-                        <p> Contact </p>
+                        <p onClick={() =>{ navigate("/Contact")}}> Contact </p>
                     </div>
                     
                 </header>

@@ -6,8 +6,9 @@ export const Nav = () =>{
     return(
         <>
             <nav>
-                <button onClick={() =>{ navigate("/")}}> About Me </button>
+                <button onClick={() =>{ navigate("/")}}> About </button>
                 <button onClick={() =>{ navigate("/Projects")}}> Projects </button>
+                <button onClick={() =>{ navigate("/Contact")}}> Contact </button>
             </nav>
         </>
     )

@@ -3,7 +3,7 @@
     border-left: 30px solid #202225;
     border-right: 30px solid #202225;
     margin: 0 auto;
-    margin-top: 5%;
+    margin-top: 2%;
     width: 40%;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
@@ -48,7 +48,11 @@ header{
     display: flex;
     gap: 5px;
     align-items: center;
+    cursor: pointer;
+}
 
+.contactContainer:hover{
+    opacity: 0.8;
 }
 
 .name{

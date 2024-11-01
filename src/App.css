@@ -9,3 +9,7 @@
 body{
     background-color: #40444b;
 }
+
+ul{
+    list-style: none;
+}
