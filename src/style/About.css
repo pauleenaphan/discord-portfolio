@@ -54,7 +54,7 @@ Nav{
     width: fit-content;
     padding: 5px 10px;
     border-radius: 5px;
-    font-size: 15px;
+    font-size: 14px;
     display: flex;
     gap: 5px;
     align-items: center; 
@@ -132,11 +132,33 @@ Nav{
 }
 
 .contactBtn{
-    border: 1px solid rgb(128, 128, 128);
-    padding: 15px 20px;
+    border: 1px solid rgb(74, 74, 74);
+    padding: 20px 15px;
     border-radius: 5px;
-    font-size: 20px;
+    font-size: 16px;
     width: 50%;
     font-weight: bold;
     cursor: pointer;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contactBtnContainer{
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.contactIcons{
+    font-size: 25px;
+}
+
+.verifiedIcon{
+    fill: rgb(110, 110, 110);
+}
+
+.arrowBtn{
+    font-size: 20px;
 }

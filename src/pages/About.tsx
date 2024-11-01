@@ -1,6 +1,10 @@
 import { Nav } from "../component/Nav";
 import "../style/About.css";
 
+import { FaLinkedin, FaGithub } from "react-icons/fa";
+import { RxArrowTopRight } from "react-icons/rx";
+import { MdVerified } from "react-icons/md";
+
 export const About = () =>{
     return(
         <div className="outerBack">
@@ -71,14 +75,20 @@ export const About = () =>{
                 </section>
                 <section className="contact">
                     <div className="contactBtn">
-                        {/* Linkedin Icon */}
-                        <p> Pauleena Phan </p>
-                        {/* Arrow Icon */}
+                        <div className="contactBtnContainer">
+                            <FaLinkedin className="contactIcons"/>
+                            <p> Pauleena Phan </p>
+                            <MdVerified className="verifiedIcon"/>
+                        </div>                        
+                        <RxArrowTopRight className="arrowBtn"/>
                     </div>
                     <div className="contactBtn">
-                        {/* Github Icon */}
-                        <p> Pauleenap </p>
-                        {/* Arrow Icon */}
+                        <div className="contactBtnContainer">
+                            <FaGithub className="contactIcons"/>
+                            <p> pauleenaphan </p>
+                            <MdVerified className="verifiedIcon"/>
+                        </div>
+                        <RxArrowTopRight className="arrowBtn"/>
                     </div>
                 </section>
             </div>
