@@ -74,22 +74,22 @@ export const About = () =>{
                     <p className="profileSubTitle"> Connections </p>
                 </section>
                 <section className="contact">
-                    <div className="contactBtn">
+                    <a className="contactBtn" href="https://www.linkedin.com/in/pauleena-phan ">
                         <div className="contactBtnContainer">
                             <FaLinkedin className="contactIcons"/>
                             <p> Pauleena Phan </p>
                             <MdVerified className="verifiedIcon"/>
                         </div>                        
                         <RxArrowTopRight className="arrowBtn"/>
-                    </div>
-                    <div className="contactBtn">
+                    </a>
+                    <a className="contactBtn" href="https://github.com/pauleenaphan">
                         <div className="contactBtnContainer">
                             <FaGithub className="contactIcons"/>
                             <p> pauleenaphan </p>
                             <MdVerified className="verifiedIcon"/>
                         </div>
                         <RxArrowTopRight className="arrowBtn"/>
-                    </div>
+                    </a>
                 </section>
             </div>
         </div>

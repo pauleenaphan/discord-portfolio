@@ -145,6 +145,10 @@ Nav{
     align-items: center;
 }
 
+.contactBtn:hover{
+    opacity: 0.8;
+}
+
 .contactBtnContainer{
     display: flex;
     align-items: center;
