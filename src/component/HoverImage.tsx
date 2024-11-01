@@ -15,7 +15,11 @@ const HoverImage: React.FC<HoverImageProps> = ({ staticSrc, gifSrc, alt }) => {
             alt={alt}
             onMouseOver={() => setImageSrc(gifSrc)}
             onMouseOut={() => setImageSrc(staticSrc)}
-            style={{ transition: 'opacity 0.3s ease' }}
+            style={{ 
+                transition: 'opacity 0.3s ease', 
+                width: "100%", 
+                padding: "10px 0px",
+            }}
         />
     );
 };

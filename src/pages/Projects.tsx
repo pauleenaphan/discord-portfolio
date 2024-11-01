@@ -2,6 +2,11 @@ import { Nav } from "../component/Nav";
 import "../style/Projects.css";
 import HoverImage from "../component/HoverImage";
 
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
+import { FaArrowUpRightFromSquare, FaGithub  } from "react-icons/fa6";
+
 import meowpopImg from "../assets/projectImgs/meowpop.png";
 import blogwogImg from "../assets/projectImgs/blogwog.png";
 import cattagramImg from "../assets/projectImgs/cattagram.png";
@@ -15,117 +20,108 @@ import cattagramGif from "../assets/projectGifs/cattagram.gif";
 import portfolio2Gif from "../assets/projectGifs/portfolio2.gif";
 import etchasketchGif from "../assets/projectGifs/etchasketch.gif";
 
-export const Projects = () =>{
-    return(
+const projects = [
+    {
+        staticSrc: meowpopImg,
+        gifSrc: meowpopGif,
+        name: "Meowpop",
+        description: "An eccomerce cat website where user can browse and purchase items. Users can also apply to become vendors and create product listings.",
+        tools: ["MongoDB", "Express.js", "React", "Node.js", "Typescript", "Amazon S3"],
+        github: "https://github.com/pauleenaphan/Meow-Pop",
+        liveSite: "https://main--meowpop.netlify.app/"
+    },
+    {
+        staticSrc: blogwogImg,
+        gifSrc: blogwogGif,
+        name: "BlogWog",
+        description: "A blog site where users can browse various post. Registered users can login to leave comments on post.",
+        tools: ["MongoDB", "Express.js", "React", "Node.js"],
+        github: "https://github.com/pauleenaphan/blog-api",
+        liveSite: "https://main--blogwog.netlify.app/"
+    },
+    {
+        staticSrc: cattagramImg,
+        gifSrc: cattagramGif,
+        name: "Cattagram",
+        description: "Social media web app that focuses on cats. Users can view and post pictures of their cats and add other users as friends.",
+        tools: ["HTML", "CSS", "React", "JavaScript", "Firebase"],
+        github: "https://github.com/pauleenaphan/Cattagram",
+        liveSite: "https://cattagram.netlify.app/"
+    },
+    {
+        staticSrc: mentalmeImg,
+        gifSrc: "",
+        name: "MentalMe",
+        description: " A mental wellness mobile app that focuses on journaling. Moobie, our mascot, supports and guides users on their journaling journey.",
+        tools: ["React Native", "Firebase", "Expo"],
+        github: "https://github.com/pauleenaphan/MentalMe",
+        liveSite: "https://expo.dev/preview/update?message=fixed%20styling&updateRuntimeVersion=1.0.0&createdAt=2024-05-07T05%3A25%3A18.090Z&slug=exp&projectId=d55f227c-6164-4fc5-ac60-040c4b42bad2&group=f55c8b6c-df7a-4874-9605-f10a26a3b534"
+    },
+    {
+        staticSrc: portfolio2Img,
+        gifSrc: portfolio2Gif,
+        name: "Portfolio2",
+        description: " My second portfolio website I made before this one. A website within a website that showcases my skills and projects.",
+        tools: ["HTML", "CSS", "React", "Typescript"],
+        github: "https://github.com/pauleenaphan/portfolio2.0/tree/main",
+        liveSite: "https://pauleenaphanportfolio2.netlify.app/"
+    },
+    {
+        staticSrc: etchasketchImg,
+        gifSrc: etchasketchGif,
+        name: "Etch-a-Sketch",
+        description: "A resizeable etch a sketch grid where users can draw with the color of their choice.",
+        tools: ["HTML", "CSS", "JavaScript"],
+        github: "https://github.com/pauleenaphan/Etch-a-Sketch",
+        liveSite: "https://pauleenaphan.github.io/Etch-a-Sketch/"
+    },
+];
+
+export const Projects = () => {
+    // Slider settings
+    const settings = {
+        dots: false,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: true, // Show arrows
+    };
+
+    return (
         <div className="outerBack">
-            <Nav></Nav>
+            <Nav />
             <div className="projectPage">
                 <div className="divider"></div>
-                <section className="projects">
-                    <div className="projectContainer">
-                        <HoverImage staticSrc={meowpopImg} gifSrc={meowpopGif} alt="meowpop"></HoverImage>
-                        <h1 className="projectName"> Meowpop </h1>
-                        <p className="projectDesc"> 
-                            An eccomerce cat website where user can browse and purchase items. 
-                            Users can also apply to become vendors and create product listings.
-                        </p>
-                        <div className="projectTools">
-                            <ul>
-                                <li> MongoDb </li> 
-                                <li> Express.js </li>
-                                <li> React </li>
-                                <li> Node.js </li>
-                                <li> Typescript </li>
-                                <li> Amazon S3 </li>
-                            </ul>
-                        </div>
-                    </div>
+                <Slider {...settings}>
+                    {projects.map((project, index) => (
+                        <div key={index} className="projectContainer">
+                            <HoverImage staticSrc={project.staticSrc} gifSrc={project.gifSrc} alt={project.name} />
+                            <div className="projectHeaderContainer">
+                                <h1 className="projectName">{project.name}</h1>
+                                <div className="linkContainer">
+                                    <a className="siteIcon" href={project.liveSite}>
+                                        <FaArrowUpRightFromSquare />
+                                    </a>
 
-                    <div className="projectContainer">
-                        <HoverImage staticSrc={blogwogImg} gifSrc={blogwogGif} alt="blogwog"></HoverImage>
-                        <h1 className="projectName"> BlogWog </h1>
-                        <p className="projectDesc">
-                            A blog site where users can browse various post. Registered
-                            users can login to leave comments on post
-                        </p>
-                        <div className="projectTools">
-                            <ul>
-                                <li> MongoDb </li> 
-                                <li> Express.js </li>
-                                <li> React </li>
-                                <li> Node.js </li>
-                            </ul>
+                                    <a className="githubIcon" href={project.github}>
+                                        <FaGithub />
+                                    </a>
+                                </div>
+                            </div>
+                            
+                            <p className="projectDesc">{project.description}</p>
+                            <div className="projectTools">
+                                <ul>
+                                    {project.tools.map((tool, idx) => (
+                                        <li key={idx}>{tool}</li>
+                                    ))}
+                                </ul>
+                            </div>
                         </div>
-                    </div>
-
-                    <div className="projectContainer">
-                        <HoverImage staticSrc={cattagramImg} gifSrc={cattagramGif} alt="blogwog"></HoverImage>
-                        <h1 className="projectName"> Cattagram </h1>
-                        <p className="projectDesc">
-                            Social media web app that focuses on cats. Users can view and post pictures
-                            of their cats and add other users as friends.
-                        </p>
-                        <div className="projectTools">
-                            <ul>
-                                <li> HTML </li> 
-                                <li> CSS </li>
-                                <li> React </li>
-                                <li> Javascript </li> 
-                                <li> Firebase </li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div className="projectContainer">
-                        <img src={mentalmeImg} alt="mentalMe"></img>
-                        <h1 className="projectName"> MentalMe </h1>
-                        <p className="projectDesc">
-                            A mental wellness mobile app that focuses on journaling. Moobie, our
-                            mascot, supports and guides users on their journaling journey.
-                        </p>
-                        <div className="projectTools">
-                            <ul>
-                                <li> React Native </li> 
-                                <li> Firebase </li>
-                                <li> Expo </li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div className="projectContainer">
-                        <HoverImage staticSrc={portfolio2Img} gifSrc={portfolio2Gif} alt="blogwog"></HoverImage>
-                        <h1 className="projectName"> Portfolio2 </h1>
-                        <p className="projectDesc">
-                            My second portfolio website I made before this one. A website
-                            within a website that showcases my skills and projects.
-                        </p>
-                        <div className="projectTools">
-                            <ul>
-                                <li> HTML </li> 
-                                <li> CSS </li>
-                                <li> React </li>
-                                <li> Typescript </li> 
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div className="projectContainer">
-                        <HoverImage staticSrc={etchasketchImg} gifSrc={etchasketchGif} alt="meowpop"></HoverImage>
-                        <h1 className="projectName"> Etch-a-Sketch </h1>
-                        <p className="projectDesc">
-                            A resizeable etch a sketch grid where users can draw with
-                            the color of their choice
-                        </p>
-                        <div className="projectTools">
-                            <ul>
-                                <li> HTML </li> 
-                                <li> CSS </li>
-                                <li> Javascript </li>
-                            </ul>
-                        </div>
-                    </div>
-                </section>
+                    ))}
+                </Slider>
             </div>
         </div>
-    )
-}
+    );
+};

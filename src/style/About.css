@@ -18,7 +18,7 @@
 }
 
 Nav{
-    padding: 20px;
+    padding: 20px 20px 10px;
     display: flex;
     gap: 50px;
 }
@@ -27,11 +27,12 @@ Nav{
     width: 95%;
     border: rgb(117, 117, 117) solid 1px;
     margin: 0px auto;
+    margin-bottom: 10px;
 }
 
 /* ! About me section */
 .aboutMeDesc{
-    padding: 20px;
+    padding: 10px 20px;
 }
 
 .profileSubTitle{

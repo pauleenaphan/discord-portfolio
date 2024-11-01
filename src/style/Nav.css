@@ -4,12 +4,25 @@ Nav{
     justify-content: space-around;
 }
 
-nav button{
+nav button {
     background-color: #2f3136;
     font-size: 15px;
     border: none;
+    position: relative; /* Ensure the button is positioned relative for absolute positioning of the line */
 }
 
 nav button:hover{
     cursor: pointer;
+}
+
+nav button:hover::after,
+nav button.active::after {
+    content: "";
+    position: absolute;
+    left: 50%; /* Start from the center of the button */
+    transform: translateX(-50%); /* Shift left by half its width to center it */
+    width: 140%; 
+    height: 1.5px; /* Line thickness */
+    background-color: #ffffff; /* Line color */
+    bottom: -12px; /* Position it slightly below the button */
 }

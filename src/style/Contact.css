@@ -13,7 +13,7 @@
 .emailFormHead{
     display: flex;
     justify-content: space-between;
-    margin-bottom: 30px;
+    margin: 20px 0px;
     gap: 10px;
 }
 
