@@ -2,9 +2,11 @@ import { Nav } from "../component/Nav";
 import "../style/About.css";
 
 import { FaLinkedin, FaGithub } from "react-icons/fa";
-import { IoMdMail } from "react-icons/io";
+import { IoMdMail, IoIosPaper } from "react-icons/io";
 import { RxArrowTopRight } from "react-icons/rx";
 import { MdVerified } from "react-icons/md";
+
+import resume from "../assets/PauleenaPhanResume.pdf";
 
 export const About = () =>{
     return(
@@ -76,7 +78,7 @@ export const About = () =>{
                     <p className="profileSubTitle"> Connections </p>
                 </section>
                 <section className="contact">
-                    <a className="contactBtn" href="https://www.linkedin.com/in/pauleena-phan ">
+                    <a className="contactBtn" href="https://www.linkedin.com/in/pauleena-phan" target="_blank" rel="noopener noreferrer">
                         <div className="contactBtnContainer">
                             <FaLinkedin className="contactIcons"/>
                             <p> Pauleena Phan </p>
@@ -84,7 +86,7 @@ export const About = () =>{
                         </div>                        
                         <RxArrowTopRight className="arrowBtn"/>
                     </a>
-                    <a className="contactBtn" href="https://github.com/pauleenaphan">
+                    <a className="contactBtn" href="https://github.com/pauleenaphan" target="_blank" rel="noopener noreferrer">
                         <div className="contactBtnContainer">
                             <FaGithub className="contactIcons"/>
                             <p> pauleenaphan </p>
@@ -92,10 +94,19 @@ export const About = () =>{
                         </div>
                         <RxArrowTopRight className="arrowBtn"/>
                     </a>
-                    <a className="contactBtn" href="https://github.com/pauleenaphan">
+                    <a className="contactBtn" href="https://github.com/pauleenaphan" target="_blank" rel="noopener noreferrer">
                         <div className="contactBtnContainer">
                             <IoMdMail className="contactIcons"/>
                             <p> Pauleena2002@gmail.com </p>
+                            <MdVerified className="verifiedIcon"/>
+                        </div>
+                        <RxArrowTopRight className="arrowBtn"/>
+                    </a>
+                    {/* target="_blank will open up resume in another tab" */}
+                    <a className="contactBtn" href={resume} target="_blank" rel="noopener noreferrer">
+                        <div className="contactBtnContainer">
+                            <IoIosPaper className="contactIcons"/>
+                            <p> Resume </p>
                             <MdVerified className="verifiedIcon"/>
                         </div>
                         <RxArrowTopRight className="arrowBtn"/>

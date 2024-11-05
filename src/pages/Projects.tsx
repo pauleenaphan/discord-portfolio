@@ -100,11 +100,11 @@ export const Projects = () => {
                             <div className="projectHeaderContainer">
                                 <h1 className="projectName">{project.name}</h1>
                                 <div className="linkContainer">
-                                    <a className="siteIcon" href={project.liveSite}>
+                                    <a className="siteIcon" href={project.liveSite} target="_blank" rel="noopener noreferrer">
                                         <FaArrowUpRightFromSquare />
                                     </a>
 
-                                    <a className="githubIcon" href={project.github}>
+                                    <a className="githubIcon" href={project.github} target="_blank" rel="noopener noreferrer">
                                         <FaGithub />
                                     </a>
                                 </div>
