@@ -16,6 +16,10 @@ ul{
 
 @media (max-width: 600px) {
     .outerBack, .outerBack2{
-        width: 85% !important; /* Adjusts to full width for mobile */
+        width: 75% !important; /* Adjusts to full width for mobile */
     }
+}
+
+a{
+    text-decoration: none;
 }
