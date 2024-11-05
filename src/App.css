@@ -13,3 +13,9 @@ body{
 ul{
     list-style: none;
 }
+
+@media (max-width: 768px) {
+    .outerBack, .outerBack2{
+        width: 90vh; /* Adjusts to full width for mobile */
+    }
+}

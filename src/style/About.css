@@ -136,7 +136,7 @@ Nav{
 
 
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(45%, 1fr));
     padding: 0px 20px;
     gap: 10px;
 }
@@ -148,12 +148,13 @@ Nav{
     font-size: 16px;
     font-weight: bold;
     cursor: pointer;
+    word-break: break-all;
 
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 10px;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
 }
 
 .contactBtn:hover{
