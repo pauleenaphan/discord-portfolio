@@ -2,6 +2,7 @@
     margin: 0 auto;
     background-color: #2f3136 !important;
     height: 75vh;
+    max-height: fit-content;
 }
 
 .projectHeaderContainer{
