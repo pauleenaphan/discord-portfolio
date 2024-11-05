@@ -14,7 +14,7 @@ ul{
     list-style: none;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 600px) {
     .outerBack, .outerBack2{
         width: 95%; /* Adjusts to full width for mobile */
     }
