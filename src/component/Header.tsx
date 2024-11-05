@@ -17,7 +17,6 @@ export const Header = () =>{
                         <IoChatbubbleSharp/>
                         <p onClick={() =>{ navigate("/Contact")}}> Contact </p>
                     </div>
-                    
                 </header>
                 <section className="name">
                     <h1> Pauleena Phan </h1>

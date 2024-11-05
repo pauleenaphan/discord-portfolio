@@ -1,8 +1,17 @@
 Nav{
     background-color: #2f3136;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
 }
+
+@media (max-width: 606px) { /* Adjust breakpoint as needed */
+    Nav {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center the items */
+    }
+}
+
 
 nav button {
     background-color: #2f3136;

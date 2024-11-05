@@ -76,17 +76,15 @@ export const Contact = () =>{
                 <section className="contactSec">
                     <p className="profileSubTitle"> Want to get in touch? Send me a message right here! </p>
                     <form className="contactForm" onSubmit={sendMail}>
-                        <div className="emailFormHead">
-                            <div className="labelInput">
-                                <label> Email </label>
-                                <input type="text" placeholder="Your Email" onChange={(e) => {updateFormData("userEmail", e.target.value)}}/>
-                            </div>
-                            <div className="labelInput">
-                                <label> Subject </label>
-                                <input type="text" placeholder="Purpose of your Email" onChange={(e) => {updateFormData("userSubject", e.target.value)}}/>
-                            </div>
-                            
+                        <div className="labelInput">
+                            <label> Email </label>
+                            <input type="text" placeholder="Your Email" onChange={(e) => {updateFormData("userEmail", e.target.value)}}/>
                         </div>
+                        <div className="labelInput">
+                            <label> Subject </label>
+                            <input type="text" placeholder="Purpose of your Email" onChange={(e) => {updateFormData("userSubject", e.target.value)}}/>
+                        </div>
+
                         <div className="labelInput">
                             <label> Message </label> 
                             <textarea placeholder="Your Message here" onChange={(e) => {updateFormData("userMessage", e.target.value)}}/>

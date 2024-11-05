@@ -1,7 +1,7 @@
 .projectPage{
     margin: 0 auto;
     background-color: #2f3136 !important;
-    height: 60vh;
+    height: 80vh;
 }
 
 .projectHeaderContainer{
@@ -9,6 +9,8 @@
     align-items: center;
     justify-content: space-between;
     padding: 10px 20px;
+    gap: 10px;
+    flex-wrap: wrap;
 }
 
 .projectName{

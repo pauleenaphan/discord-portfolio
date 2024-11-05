@@ -3,18 +3,14 @@
     /* fix this later */
     /* border-radius: 10px; */
     background-color: #2f3136 !important;
-    height: 60vh;
+    height: 80vh;
 }
 
 .contactForm{
     padding: 20px;
-}
-
-.emailFormHead{
     display: flex;
-    justify-content: space-between;
-    margin: 20px 0px;
-    gap: 10px;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .labelInput{
@@ -23,6 +19,7 @@
     gap: 10px;
     width: 100%;
 }
+
 
 input[type=text], textarea{
     /* width: 100%; */
@@ -56,7 +53,7 @@ textarea{
     border: none;
     cursor: pointer;
     font-size: 15px;
-    margin: 20px 0px;
+    margin-top: 10px;
 }
 
 .subbtn:hover{
