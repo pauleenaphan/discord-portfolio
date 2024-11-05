@@ -1,7 +1,8 @@
 .projectPage{
     margin: 0 auto;
     background-color: #2f3136 !important;
-    height: 75vh;
+        
+    min-height: 65vh;
     max-height: fit-content;
 }
 
