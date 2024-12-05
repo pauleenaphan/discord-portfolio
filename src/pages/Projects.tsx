@@ -13,12 +13,14 @@ import cattagramImg from "../assets/projectImgs/cattagram.png";
 import mentalmeImg from "../assets/projectImgs/mentalme.png";
 import portfolio2Img from "../assets/projectImgs/portfolio2.png";
 import etchasketchImg from "../assets/projectImgs/etchasketch.png";
+import oldmacschatImg from "../assets/projectImgs/oldmacschat.png";
 
 import meowpopGif from "../assets/projectGifs/meowpop.gif";
 import blogwogGif from "../assets/projectGifs/blogwog.gif";
 import cattagramGif from "../assets/projectGifs/cattagram.gif";
 import portfolio2Gif from "../assets/projectGifs/portfolio2.gif";
 import etchasketchGif from "../assets/projectGifs/etchasketch.gif";
+import oldmacschatGif from "../assets/projectGifs/oldmacschat.gif";
 
 const projects = [
     {
@@ -38,6 +40,15 @@ const projects = [
         tools: ["MongoDB", "Express.js", "React", "Node.js"],
         github: "https://github.com/pauleenaphan/blog-api",
         liveSite: "https://main--blogwog.netlify.app/"
+    },
+    {
+        staticSrc: oldmacschatImg,
+        gifSrc: oldmacschatGif,
+        name: "Old Mac's Farm",
+        description: "A global chat where users can only type using the letters E I O",
+        tools: ["MongoDB", "Express.js", "React", "Socket.Io"],
+        github: "https://github.com/pauleenaphan/Old-Mac-s-Chat/tree/main",
+        liveSite: "https://oldmacschat.netlify.app/"
     },
     {
         staticSrc: cattagramImg,
