@@ -45,7 +45,7 @@ const projects = [
         staticSrc: oldmacschatImg,
         gifSrc: oldmacschatGif,
         name: "Old Mac's Farm",
-        description: "A global chat where users can only type using the letters E I O",
+        description: "A real time global chat where users can only type using the letters E, I, and O",
         tools: ["MongoDB", "Express.js", "React", "Socket.Io"],
         github: "https://github.com/pauleenaphan/Old-Mac-s-Chat/tree/main",
         liveSite: "https://oldmacschat.netlify.app/"
