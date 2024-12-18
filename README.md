@@ -4,7 +4,7 @@ This is my third portfolio site to showcase my skills and projects. This portfol
 
 [Deployed Using Netlify](https://pauleenaporfolio3.netlify.app/) <br> 
 [First Porfolio](https://master--pauleenaportfoliosite.netlify.app/) <br>
-[Second Portfolio](pauleenaphan.com)
+[Second Portfolio](https://pauleenaphan.com)
 
 
 # Preview
